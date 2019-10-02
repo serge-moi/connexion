@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+}
+
+main{
+    text-align: center;
+}
+
+header .art:nth-child(1), footer .art:nth-child(1){
+    flex-grow: 1;
+    padding: 8.1% 0;
+    background-color: rebeccapurple;
+}
+header .art:nth-child(2), footer .art:nth-child(2){
+    flex-grow: 1;
+    padding: 8.1% 0;
+}
+header .art:nth-child(3), footer .art:nth-child(3){
+    flex-grow: 1;
+    padding: 8.1% 0;
+    background-color: red;
+}
+
+main .art:nth-child(1){
+    flex-grow: 2;
+    padding: 8.1% 0;
+    background-color: chartreuse;
+}
+main .art:nth-child(2){
+    flex-basis: 33.333%;
+    background-color: blueviolet;
+}
+main .art:nth-child(3){
+    flex-grow: 2;
+    padding: 8.1% 0;
+}
+
+.sectlog{
+    display: flex;
+}
+
+.log{
+    display: flex;
+}
+
+form{
+    display: flex;
+    box-shadow: 1px 1px 8px;
+}
+
+#corem{
+    width: 66.5%;
+}
+.imgcorem{
+    display: flex;
+}
+
+/*
+
+.logmdp{
+    padding-right: 2px;
+}
+
+.logsub{
+    padding-left: 86px;
+    margin-top: 10px;
+}
+
+.navform{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 84px;
+}
+
+*/
+
+footer{
+    display: flex;
+}
