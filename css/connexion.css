@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap');
+
+
+/*////////////////////////////// BODY //////////////////////////////*/
+
 .container{
     display: flex;
     flex-direction: column;
@@ -7,82 +13,201 @@
     padding: 0;
 }
 
-header{
+.art{
+    box-shadow: 1px 1px 10px;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+
+/*////////////////////////////// HEADER //////////////////////////////*/
+
+
+
+.headco{
     display: flex;
 }
 
-main{
-    text-align: center;
+.headco .art:nth-child(1){
+    flex-grow: 1;
+    padding: 8.3% 0;
+    background: linear-gradient(to top right, black, 65%, #2a4e54);
+
+}
+.headco .art:nth-child(2){
+    flex-grow: 1;
+    padding: 8.3% 0;
+    background: conic-gradient(black, 75%, #2a4e54);
 }
 
-header .art:nth-child(1), footer .art:nth-child(1){
+.headco .art:nth-child(3){
     flex-grow: 1;
-    padding: 8.1% 0;
-    background-color: rebeccapurple;
-}
-header .art:nth-child(2), footer .art:nth-child(2){
-    flex-grow: 1;
-    padding: 8.1% 0;
-}
-header .art:nth-child(3), footer .art:nth-child(3){
-    flex-grow: 1;
-    padding: 8.1% 0;
-    background-color: red;
+    padding: 8.3% 0;
+    background: linear-gradient(to top left, black, 65%, #2a4e54);
 }
 
-main .art:nth-child(1){
-    flex-grow: 2;
-    padding: 8.1% 0;
-    background-color: chartreuse;
+.headco .art:nth-child(2){
+    background: conic-gradient(black, 75%, #2a4e54);
 }
-main .art:nth-child(2){
-    flex-basis: 33.333%;
-    background-color: blueviolet;
+
+.h1co{
+    box-shadow: 1px 1px 8px white;
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    margin-left: 158px;
+    margin-top: -64px;
+    font-family: 'Righteous', cursive;
+    border: 2px solid white;
+    padding: 2%;
+    border-radius: 42px;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
-main .art:nth-child(3){
-    flex-grow: 2;
-    padding: 8.1% 0;
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
+
+
+/* ----------------------------------------------------------------- */
+
+
+
+/*////////////////////////////// MAIN //////////////////////////////*/
+
+
 
 .sectlog{
     display: flex;
+}
+
+.mainco .art:nth-child(1){
+    flex-grow: 2;
+    padding: 8.1% 0;
+    background: linear-gradient(to right, black, 65%, #2a4e54);
+}
+
+.mainco .art:nth-child(2){
+    flex-basis: 33.333%;
+    background-color: blueviolet;
+}
+
+.mainco .art:nth-child(3){
+    flex-grow: 2;
+    padding: 8.1% 0;
+    background: linear-gradient(to left, black, 65%, #2a4e54);
+}
+
+.formco{
+    display: flex;
+    transition-duration: 2s;
+}
+
+.formco:hover{
+    transform: scale(1.5);
+    transition-timing-function: ease-out;
+}
+
+#corem{
+    width: 39.2%;
+}
+
+.logid{
+    width: 61%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
 }
 
 .log{
     display: flex;
 }
 
-form{
+.log #pseudo, #pass{
+    padding-left: 1px;
+    background-color: black;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.but{
+    padding: 6px 67px;
+    border-radius: 30px;
+    background-color: chartreuse;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: dotted;
+}
+
+.but:hover{
+    color: #ff5e00;
+    background-color: darkslategrey;
+    border: 1px solid;
+}
+
+.navform p{
+    color: chartreuse;
+    margin: 0 0 30px 0;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+.navform a{
+    padding: 0px 4px;
+    text-decoration: none;
+    color: orangered;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+/*////////////////////////////// FOOTER //////////////////////////////*/
+
+
+
+.footco{
     display: flex;
+}
+
+.footco .art:nth-child(1){
+    flex-grow: 1;
+    padding: 8.3% 0;
+    background: linear-gradient(to bottom right, black, 65%, #2a4e54);
+}
+
+.footco .art:nth-child(2){
+    flex-grow: 1;
+    padding: 8.3% 0;
+    background: linear-gradient(black, #2a4e54);
+}
+
+.footco .art:nth-child(3){
+    flex-grow: 1;
+    padding: 8.3% 0;
+    background: linear-gradient(to bottom left, black, 65%, #2a4e54);
+}
+
+.fas{
+    color: white;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -125px;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 24px;
     box-shadow: 1px 1px 8px;
 }
 
-#corem{
-    width: 66.5%;
-}
-.imgcorem{
-    display: flex;
-}
 
-/*
-
-.logmdp{
-    padding-right: 2px;
-}
-
-.logsub{
-    padding-left: 86px;
-    margin-top: 10px;
-}
-
-.navform{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 84px;
-}
-
-*/
-
-footer{
-    display: flex;
-}
+/* ----------------------------------------------------------------- */

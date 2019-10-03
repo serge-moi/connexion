@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>connexion</title>
         <meta charset="utf-8">
+        <title>connexion</title>
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.css" rel="stylesheet">
+        <link href="fontawesome/css/solid.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/connexion.css">
     </head>
     <body class="container">
-        <header>
+        <header class="headco">
             <article class="art"></article>
-            <article class="art"></article>
+            <article class="art">
+                <h1 class="h1co">Rem ram city</h1>
+            </article>
             <article class="art"></article>
         </header>
-        <main>
+        <main class="mainco">
             <section class="sectlog">
                 <article class="art"></article>
                 <article class="art" id="co">
-                    <form method="POST">
-                        <div class="imgcorem">
-                            <input type="image" src="images/co.jpg" alt="corem" id="corem">
-                        </div>
+                    <form class="formco" method="POST">
+                            <img src="images/co.jpg" alt="corem" id="corem">
                         <div class="logid">
                             <div class="log">
-                                <label for="pseudo">Pseudonyme : </label>
-                                <input type="text" id="pseudo" name="pseudo">
+                                <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" required="required">
                             </div>
                             <div class="log logmdp">
-                                <label for="pass">Mot de passe : </label>
-                                <input type="text" id="pass" name="pass">
+                                <input type="text" id="pass" name="pass" placeholder="Password" required="required">
                             </div>  
                             <div class="log logsub">
-                                <input type="submit" value="Envoyer">
+                                <button class="but" type="submit">login</button>
                             </div>
-                            
                             <nav class="navform">
-                                <a href="#">Créer un compte</a>
-                                <a href="#">Mot de passe oublié</a>
+                                <p>Not registered ?<a href="#">Create an account</a></p>
+                                <a href="#">Forgot Password ?</a>
                             </nav> 
                         </div>
                     </form>
@@ -42,9 +42,11 @@
                 <article class="art"></article>
             </section>
         </main>
-        <footer>
+        <footer class="footco">
             <article class="art"></article>
-            <article class="art"></article>
+            <article class="art">
+                    <i class="fas fa-copyright"> copyright all rights reserved</i>
+            </article>
             <article class="art"></article>
         </footer>
     </body>
