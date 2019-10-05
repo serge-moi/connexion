@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spinnaker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Wendy+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+
 
 
 /*////////////////////////////// BODY //////////////////////////////*/
@@ -18,8 +29,23 @@
 }
 
 
-/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- 2 */
 
+
+
+.container2{
+    background: linear-gradient( black, 20%, #2a4e54);
+}
+
+
+
+/* ----------------------------------------------------------------- 3 */
+
+.container3{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
 
 
 /*////////////////////////////// HEADER //////////////////////////////*/
@@ -48,10 +74,6 @@
     background: linear-gradient(to top left, black, 65%, #2a4e54);
 }
 
-.headco .art:nth-child(2){
-    background: conic-gradient(black, 75%, #2a4e54);
-}
-
 .h1co{
     box-shadow: 1px 1px 8px white;
     position: absolute;
@@ -76,9 +98,9 @@
 }
 
 
-/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- 2 */ 
 
-
+/* ----------------------------------------------------------------- 3 */
 
 /*////////////////////////////// MAIN //////////////////////////////*/
 
@@ -132,7 +154,7 @@
     display: flex;
 }
 
-.log #pseudo, #pass{
+.log #login, #pass{
     padding-left: 1px;
     background-color: black;
     border: none;
@@ -146,7 +168,9 @@
     background-color: chartreuse;
     text-transform: uppercase;
     font-weight: bold;
-    border: dotted;
+    border: dotted black;
+    color: white;
+    text-shadow: 1px 1px 8px black;
 }
 
 .but:hover{
@@ -168,8 +192,250 @@
     font-family: 'Cabin Condensed', sans-serif;
 }
 
+.navform a:hover{
+    color: #74a2b7;
+    text-shadow: 1px 1px 5px orangered;
+}
 
-/* ----------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------- 2 */
+
+.formsub{
+    display: flex;
+}
+
+#rimg{
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 24px;
+    width: 69.5%;
+    border: 1px solid;
+    border-right: none;
+    z-index: 5;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.fieldsub{
+    display: flex;
+    margin-left: auto;
+    font-family: 'Boogaloo', cursive;
+    padding: 10px 92px;
+    font-size: 30px;
+    border: 1px solid;
+    margin-right: 56px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.formleg{
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 8px;
+    color: deeppink;
+    text-shadow: 1px 1px 8px;
+}
+
+#date{
+    text-transform: uppercase;
+    padding: 6px 0 5px 17px;
+    margin-left: 45px;
+    font-weight: bold;
+    font-family: 'Audiowide', cursive;
+}
+
+#logsub, #mdp, #confpass, #date, #prenom, #nom, #mail, #etudes, #phone{
+    padding-top: 9px;
+    border: 2px inset lightseagreen;
+    background-color: #ff008d12;
+}
+
+#logsub, #mdp, #confpass, #prenom, #nom, #mail, #etudes, #phone{
+    width: 260px;
+    border-radius: 10px;
+    margin-left: 8px;
+    padding: 6px 0 3px 6px;
+    color: darkblue;
+    text-shadow: 1px 1px 6px black;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+}
+
+#logsub:hover, #mdp:hover, #confpass:hover, #date:hover, #prenom:hover, #nom:hover, #mail:hover, #etudes:hover, #phone:hover, #present:hover, #sexe1:hover, #sexe2:hover, #hob:hover{
+    transform: scale(1.5);
+    transition-timing-function: ease-out;
+}
+
+#etudes option:hover{
+    transform: scale(1.5);
+    transition-timing-function: ease-out;
+}
+
+span{
+    display:flex;
+    justify-content: center;
+    color: darkslateblue;
+    margin-top: 25px;
+}
+
+label[for="sexe1"]{ /* merci css_diner */
+    margin-left: 10px;
+    color: #afaeff;
+    text-shadow: 1px 1px 6px black;
+}
+
+label[for="sexe2"]{
+    padding-left: 37px;
+    color: #f894ff;
+    text-shadow: 1px 1px 6px black;
+}
+
+#present{
+    width: 260px;
+    border: 2px inset #421313;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 19px;
+    padding: 7px;
+    margin-left: 4px;
+}
+
+#who{
+    padding-bottom: 8px;
+}
+
+#etudes:hover{
+    background-color: white;
+}
+
+.listhob{
+    margin-left:34px;
+}
+
+.butsub{
+    margin: auto;
+    padding: 35px 21px;
+    border-radius: 48px;
+    background-color: currentColor;
+    border: 2px inset orangered;
+    box-shadow: 1px 1px 30px black;
+} 
+
+.butsub .liensub{
+    text-decoration: none;
+    color: #ef5058;
+    text-shadow: 1px 1px 3px white;
+}
+
+.butsub:hover{
+    transform: scale(1.2);
+    transition-timing-function: ease-out;
+    background-color: cadetblue;
+    border: 2px inset #8a0b5d;
+    box-shadow: 1px 1px 30px #ab178b;
+}
+
+.butsub:hover .liensub{
+    color: #d40ac4;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+
+/* ----------------------------------------------------------------- 3 */
+
+
+
+#mainmdp{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 18px;
+}
+
+
+#formdp{
+    position: absolute;
+    margin-top: 324.5px;
+    margin-left: 767px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 3px 0px 3px;
+    box-shadow: 1px 1px 8px black;
+    background-color: crimson;
+    border: 5px inset dimgray;
+}
+
+.mdptitle{
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    margin:0;
+    padding: 3px 0 8px 0;
+    margin-bottom: 9px;
+    border-bottom: 3px solid black;
+}
+
+.mdplowtit{
+    font-family: 'Wendy One', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+img{
+    width: 10%;
+}
+
+#paramark{
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 8px black;
+    box-shadow: 1px 1px 10px black;
+    font-weight: bold;
+}
+
+#email{
+    width: 250px;
+    padding: 6px 0;
+    border-radius: 15px;
+    padding-left: 6px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 22px;
+}
+
+
+
+label[for="email"]{
+    font-family: 'Ceviche One', cursive;
+    font-size: 25px;
+    padding: 2px 0 2px 1px;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+#mdpsend{
+    width: 102px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 7px 0;
+    background-color: gray;
+    border: 3px ridge black;
+    font-family: 'Luckiest Guy', cursive;
+    color: cornsilk;
+    text-shadow: 1px 1px 11px black;
+}
+
+#mdpsend:hover{
+    color: #ffffff;
+    background-color: #dc143c;
+    border: 3px solid;
+    box-shadow: 1px 1px 10px black;
+}
+
 
 
 /*////////////////////////////// FOOTER //////////////////////////////*/
@@ -210,4 +476,7 @@
 }
 
 
-/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- 2 */
+
+/* ----------------------------------------------------------------- 3 */
+

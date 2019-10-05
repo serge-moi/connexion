@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>inscription</title>
+        <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.css" rel="stylesheet">
+        <link href="fontawesome/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/connexion.css">
+    </head>
+    <body class="container2">
+        <header></header>
+        <main>
+            <img id="rimg" src="images/rem.jpg" alt="rem">
+            <form class="formsub" method="POST">
+                <fieldset class="fieldsub">
+                    <legend class="formleg">Registration Info</legend>
+                    <label for="login">
+                    <span>Login: </span>
+                    <input type="text" id="logsub" name="logsub" placeholder="" required="required">
+                    </label>
+                    <label for="mdp">
+                    <span>Password: </span>
+                    <input type="password" id="mdp" name="mdp" placeholder="" required="required">
+                    </label>
+                    <label for="confpass">
+                    <span>Confirm Password: </span>
+                    <input type="password" id="confpass" name="confpass" placeholder="" required="required">
+                    </label>
+                    <label for="date">
+                    <span>Date of Birth: </span>
+                    <input type="date" id="date" name="naissance">
+                    </label>
+                    <label for="prenom">
+                    <span>First name: </span>
+                    <input type="text" id="prenom" name="prenom" placeholder="">
+                    </label>
+                    <label for="nom">
+                    <span>Last name: </span>
+                    <input type="text" id="nom" name="nom" placeholder="">
+                    </label>
+                    <label for="mail">
+                    <span>Email: </span>
+                    <input type="mail" id="mail" name="mail" placeholder="" required="required">
+                    </label>
+                    <label for="choixsexe">
+                    <span>Sex: </span>
+                    <label for="sexe1">
+                    <input type="radio" id="sexe1" name="sexe" value="H" required="required">
+                    Homme
+                    </label>
+                    <label for="sexe2">
+                    <input type="radio" id="sexe2" name="sexe" value="F" required="required">
+                    Femme
+                    </label>
+                    </label>
+                    <label for="etudes">
+                    <span>Education Level: </span><select name="etudes" id="etudes" required="required">
+                        <option value="0"></option>
+                        <option value="1">
+                                Graduate in Pokémon dressage</option>
+                        <option value="2">
+                                Graduate in professional laziness</option>
+                        <option value="3">Cookies</option>
+                        <option value="4">
+                                pasta eater</option>
+                        <option value="5">Silver on League of Legends</option>
+                    </select>
+                    </label>
+                    <label for="phone">
+                    <span>Phone: </span>
+                    <input type="tel" id="phone" name="phone" maxlength="10" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+                    </label>
+                    <label for="present">
+                    <span id="who">Who are you ?</span>
+                    <textarea name="present" id=present cols="30" rows="10">Presentation</textarea>
+                    </label>
+                    <label for="hob">
+                    <span>Hobbies :</span>
+                            <ul class="listhob">
+                                <li><input type="checkbox" id="hob" name="sport"> Sport</li>
+                                <li><input type="checkbox" id="hob" name="lecture"> Lecture</li>
+                                <li><input type="checkbox" id="hob" name="informatique"> Informatique</li>
+                            </ul>
+                    </label>
+                    <button class="butsub" type="submit"><a class="liensub" href="connexion.html">Submit</a></button>
+                </fieldset>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
